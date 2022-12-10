@@ -1,0 +1,34 @@
+Results-Brain-Tumor-Radiogenomic-Classification
+
+
+--------------- Test 1 ---------------
+
+Network: VGG16-128-64-32-1
+Epochs: 7
+Batch Size: 64
+LR: 0.01
+patient_mode = "all"
+image_mode = "T2w"
+optimizer = "RMSprop"
+loss_function = "binary_crossentropy"
+
+AUC test: 0.653
+
+--------------- Test 2 ---------------
+
+Network: VGG16-128-64-32-1
+Epochs: 7
+Batch Size: 128
+LR: 0.01
+patient_mode = "all"
+image_mode = "T2w"
+optimizer = "RMSprop"
+loss_function = "binary_crossentropy"
+
+AUC test: 0.645
+
+--------------- Test 3 ---------------
+
+
+
+--------------- Test 4 ---------------
