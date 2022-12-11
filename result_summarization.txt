@@ -179,8 +179,52 @@ AUC test: 0.5
 
 --------------- Test 12 ---------------
 
+Network = VGG16-128-64-32-16-1
+Epochs = 25
+Batch Size = 32
+LR = 0.01
+patient_mode = "all"
+image_mode = "FLAIR"
+optimizer = "RMSprop"
+loss_function = "binary_crossentropy"
+data_augmentation = False
+split = 90-10-10
+Comment: Change type of images
+
+AUC test: 0.686
 
 --------------- Test 13 ---------------
 
+Network = VGG16-128-64-32-16-1
+Epochs = 25
+Batch Size = 32
+LR = 0.01
+patient_mode = "all"
+image_mode = "T1w"
+optimizer = "RMSprop"
+loss_function = "binary_crossentropy"
+data_augmentation = False
+split = 90-10-10
+Comment: Change type of images
+
+AUC test: 0.5
 
 --------------- Test 14 ---------------
+
+
+
+--------------- Test 15 ---------------
+
+
+
+--------------- Test 16 ---------------
+
+
+
+--------------- Test 17 ---------------
+
+
+
+--------------- Test 18 ---------------
+
+
