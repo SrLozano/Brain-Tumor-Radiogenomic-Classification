@@ -319,7 +319,7 @@ data_augmentation = False
 split = 90-10-10
 Comment: More epochs
 
-AUC test: 
+AUC test: 0.773
 
 --------------- Test 21 ---------------
 
