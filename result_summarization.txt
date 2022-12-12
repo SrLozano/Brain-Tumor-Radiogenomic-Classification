@@ -287,10 +287,41 @@ data_augmentation = False
 split = 90-10-10
 Comment: Lower learning rate
 
-AUC test: 
+AUC test: 0.696
 
 --------------- Test 19 ---------------
 
+Network = VGG16-128-64-32-16-1
+Epochs = 30
+Batch Size = 32
+LR = 0.001
+patient_mode = "all"
+image_mode = "FLAIR"
+optimizer = "RMSprop"
+loss_function = "binary_crossentropy"
+data_augmentation = False
+split = 90-10-10
+Comment: Lower learning rate + more epochs
 
+AUC test: 0.761
 
 --------------- Test 20 ---------------
+
+Network = VGG16-128-64-32-16-1
+Epochs = 50
+Batch Size = 32
+LR = 0.001
+patient_mode = "all"
+image_mode = "FLAIR"
+optimizer = "RMSprop"
+loss_function = "binary_crossentropy"
+data_augmentation = False
+split = 90-10-10
+Comment: More epochs
+
+AUC test: 
+
+--------------- Test 21 ---------------
+
+
+--------------- Test 22 ---------------
