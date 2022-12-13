@@ -1,340 +1,354 @@
-Results-Brain-Tumor-Radiogenomic-Classification
-
---------------- Test 1 ---------------
-
-Network = VGG16-128-64-32-1
-Epochs = 7
-Batch Size = 64
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Baseline
-
-AUC test: 0.653
-
---------------- Test 2 ---------------
-
-Network = VGG16-128-64-32-1
-Epochs = 7
-Batch Size = 128
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Higher batch size
-
-AUC test: 0.645
-
---------------- Test 3 ---------------
-
-Network = VGG16-128-64-32-1
-Epochs = 7
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Smaller batch size
-
-AUC test: 0.649
-
-
---------------- Test 4 ---------------
-
-Network = VGG16-128-64-32-1
-Epochs = 15
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Trained on more epochs
-
-AUC test: 0.664
-
---------------- Test 5 ---------------
-
-Network = VGG16-128-64-32-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Trained on more epochs
-
-AUC test: 0.666
-
---------------- Test 6 ---------------
-
-Network = VGG16-128-64-32-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "Adam"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Change optimizer
-
-AUC test: 0.5 
-
---------------- Test 7 ---------------
-
-Network = VGG16-128-64-32-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "SGD"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Change optimizer
-
-AUC test: 0.624
-
---------------- Test 8 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Increase network depth
-
-AUC test: 0.667
-
---------------- Test 9 ---------------
-
-Network = VGG16-256-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Increase network depth
-
-AUC test: 0.666
-
---------------- Test 10 ---------------
-
-Network = VGG19-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: VGG19
-
-AUC test: 0.5
-
---------------- Test 11 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T2w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = True
-split = 90-10-10
-Comment: Data augmentation
-
-AUC test: 0.5
-
---------------- Test 12 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "FLAIR"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Change type of images
-
-AUC test: 0.686
-
---------------- Test 13 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T1w"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Change type of images
-
-AUC test: 0.5
-
---------------- Test 14 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "all"
-image_mode = "T1wCE"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Change type of images
-
-AUC test: 0.5
-
---------------- Test 15 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 16
-LR = 0.01
-patient_mode = "all"
-image_mode = "FLAIR"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Lower batch size
-
-AUC test: 0.5
-
---------------- Test 16 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "central"
-image_mode = "FLAIR"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Change image mode
-
-AUC test: 0.5
-
---------------- Test 17 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.01
-patient_mode = "first"
-image_mode = "FLAIR"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Change image mode
-
-AUC test: 0.5
-
---------------- Test 18 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 25
-Batch Size = 32
-LR = 0.005
-patient_mode = "all"
-image_mode = "FLAIR"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Lower learning rate
-
-AUC test: 0.696
-
---------------- Test 19 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 30
-Batch Size = 32
-LR = 0.001
-patient_mode = "all"
-image_mode = "FLAIR"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Lower learning rate + more epochs
-
-AUC test: 0.761
-
---------------- Test 20 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 50
-Batch Size = 32
-LR = 0.001
-patient_mode = "all"
-image_mode = "FLAIR"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: More epochs
-
-AUC test: 0.773
-
---------------- Test 21 ---------------
-
-Network = VGG16-128-64-32-16-1
-Epochs = 40
-Batch Size = 32
-LR = 0.0005
-patient_mode = "all"
-image_mode = "FLAIR"
-optimizer = "RMSprop"
-loss_function = "binary_crossentropy"
-data_augmentation = False
-split = 90-10-10
-Comment: Lower learning rate  + less epochs
-
-AUC test: 0.779
-
---------------- Test 22 ---------------
+Results-Brain-Tumor-Radiogenomic-Classification    
+    
+--------------- Test 1 ---------------    
+    
+Network = VGG16-128-64-32-1    
+Epochs = 7    
+Batch Size = 64    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Baseline    
+    
+AUC test: 0.653    
+    
+--------------- Test 2 ---------------    
+    
+Network = VGG16-128-64-32-1    
+Epochs = 7    
+Batch Size = 128    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Higher batch size    
+    
+AUC test: 0.645    
+    
+--------------- Test 3 ---------------    
+    
+Network = VGG16-128-64-32-1    
+Epochs = 7    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Smaller batch size    
+    
+AUC test: 0.649    
+    
+    
+--------------- Test 4 ---------------    
+    
+Network = VGG16-128-64-32-1    
+Epochs = 15    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Trained on more epochs    
+    
+AUC test: 0.664    
+    
+--------------- Test 5 ---------------    
+    
+Network = VGG16-128-64-32-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Trained on more epochs    
+    
+AUC test: 0.666    
+    
+--------------- Test 6 ---------------    
+    
+Network = VGG16-128-64-32-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "Adam"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Change optimizer    
+    
+AUC test: 0.5     
+    
+--------------- Test 7 ---------------    
+    
+Network = VGG16-128-64-32-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "SGD"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Change optimizer    
+    
+AUC test: 0.624    
+    
+--------------- Test 8 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Increase network depth    
+    
+AUC test: 0.667    
+    
+--------------- Test 9 ---------------    
+    
+Network = VGG16-256-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Increase network depth    
+    
+AUC test: 0.666    
+    
+--------------- Test 10 ---------------    
+    
+Network = VGG19-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: VGG19    
+    
+AUC test: 0.5    
+    
+--------------- Test 11 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T2w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = True    
+split = 90-10-10    
+Comment: Data augmentation    
+    
+AUC test: 0.5    
+    
+--------------- Test 12 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Change type of images    
+    
+AUC test: 0.686    
+    
+--------------- Test 13 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T1w"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Change type of images    
+    
+AUC test: 0.5    
+    
+--------------- Test 14 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "T1wCE"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Change type of images    
+    
+AUC test: 0.5    
+    
+--------------- Test 15 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 16    
+LR = 0.01    
+patient_mode = "all"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Lower batch size    
+    
+AUC test: 0.5    
+    
+--------------- Test 16 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "central"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Change image mode    
+    
+AUC test: 0.5    
+    
+--------------- Test 17 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.01    
+patient_mode = "first"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Change image mode    
+    
+AUC test: 0.5    
+    
+--------------- Test 18 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 25    
+Batch Size = 32    
+LR = 0.005    
+patient_mode = "all"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Lower learning rate    
+    
+AUC test: 0.696    
+    
+--------------- Test 19 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 30    
+Batch Size = 32    
+LR = 0.001    
+patient_mode = "all"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Lower learning rate + more epochs    
+    
+AUC test: 0.761    
+    
+--------------- Test 20 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 50    
+Batch Size = 32    
+LR = 0.001    
+patient_mode = "all"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: More epochs    
+    
+AUC test: 0.773    
+    
+--------------- Test 21 ---------------    
+    
+Network = VGG16-128-64-32-16-1    
+Epochs = 40    
+Batch Size = 32    
+LR = 0.0005    
+patient_mode = "all"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: Lower learning rate  + less epochs    
+    
+AUC test: 0.779    
+    
+--------------- Test 22 ---------------    
+
+Network = VGG16-128-64-32-16-1    
+Epochs = 50    
+Batch Size = 32    
+LR = 0.0005    
+patient_mode = "all"    
+image_mode = "FLAIR"    
+optimizer = "RMSprop"    
+loss_function = "binary_crossentropy"    
+data_augmentation = False    
+split = 90-10-10    
+Comment: More epochs    
+    
+AUC test: 0.802  
