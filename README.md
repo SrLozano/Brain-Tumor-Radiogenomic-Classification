@@ -21,11 +21,14 @@ Each independent case has a dedicated folder identified by a five-digit number. 
 -   T2-weighted (**T2w**)
 
 Fluid Attenuated Inversion Recovery (**FLAIR**)
-	![FLAIR](docs/images/FLAIR_visualization.png)
+![FLAIR](docs/images/FLAIR_visualization.png)
+
 T1-weighted pre-contrast (**T1w**)
- ![T1w](docs/images/T1w_visualization.png)
+![T1w](docs/images/T1w_visualization.png)
+
 T1-weighted post-contrast (**T1wCE**)
 ![T1wCE](docs/images/T1wCE_visualization.png)
+
 T2-weighted (**T2w**)
 ![T2w](docs/images/T2w_visualization.png)
 
@@ -91,7 +94,7 @@ Improve performace and generalization
 
 ## Issues 🤕
 
-Generalization
+keras model.evaluate and sklearn roc_auc_score give different results. [Stack Overflow](https://stackoverflow.com/questions/74745581/keras-model-evaluate-and-sklearn-roc-auc-score-give-different-results)
 
 ## Want to collaborate? 🙋🏻
 Feel free to improve and optimize the existing code. To contribute to the project, read the previous points carefully and do the next steps with the project:
