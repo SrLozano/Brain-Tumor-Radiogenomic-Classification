@@ -79,10 +79,10 @@ Run *brain-tumor-classification.ipynb* with the Kaggle dataset in order to train
 
 ## Results 📊
 
-**Accuracy on test set: 0.719**  
-**AUC on test set: 0.802**  
+**Accuracy on test set: 0.738**  
+**AUC on test set: 0.823**  
 
-This result is considered to be very good taking into account that in the challenge ranking it would have been placed in position 17 of 1556 participants, as can be observed from the [public test data leaderboard](https://www.kaggle.com/competitions/rsna-miccai-brain-tumor-radiogenomic-classification/leaderboard?tab=public).
+This result is considered to be very good taking into account that in the challenge ranking it would have been placed in position 12 of 1556 participants, as can be observed from the [public test data leaderboard](https://www.kaggle.com/competitions/rsna-miccai-brain-tumor-radiogenomic-classification/leaderboard?tab=public).
 
 ![Accuracy](docs/images/Brain_Tumor_accuracy.png)
 
